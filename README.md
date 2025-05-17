@@ -209,6 +209,144 @@ footer {
         font-size: 1rem;
     }
 }
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+}
+
+.navbar nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.content {
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.grid-item {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox Layout */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.flex-item {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+/* Media Queries */
+
+/* Tablet: 768px and up */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-item {
+        margin: 10px 0;
+    }
+}
+
+/* Mobile: 480px and up */
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+    }
+
+    .navbar nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
 
 
 Happy Coding! 💻✨
